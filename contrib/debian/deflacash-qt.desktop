@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=deflacash
+Comment=deflacash P2P Cryptocurrency
+Comment[fr]=deflacash, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=deflacash, eşten eşe kriptografik sanal para birimi
+Exec=deflacash-qt %u
+Terminal=false
+Type=Application
+Icon=deflacash128
+MimeType=x-scheme-handler/deflacash;
+Categories=Office;Finance;

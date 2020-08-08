@@ -1,0 +1,26 @@
+[Unit]
+Description=deflacash's distributed currency daemon
+After=network.target
+
+[Service]
+User=deflacash
+Group=deflacash
+
+Type=forking
+PIDFile=/var/lib/deflacashd/deflacashd.pid
+
+ExecStart=/usr/bin/deflacashd -daemon -pid=/var/lib/deflacashd/deflacashd.pid \
+          -conf=/etc/deflacash/deflacash.conf -datadir=/var/lib/deflacashd
+
+ExecStop=-/usr/bin/deflacash-cli -conf=/etc/deflacash/deflacash.conf \
+         -datadir=/var/lib/deflacashd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

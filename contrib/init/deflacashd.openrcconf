@@ -1,0 +1,26 @@
+# /etc/conf.d/deflacashd: config file for /etc/init.d/deflacashd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/deflacash/deflacash.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/deflacashd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/deflacashd.pid"
+
+# Where to write deflacashd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/deflacashd"
+
+# User and group to own deflacashd process
+#BITCOIND_USER="deflacash"
+#BITCOIND_GROUP="deflacash"
+
+# Path to deflacashd executable
+#BITCOIND_BIN="/usr/bin/deflacashd"
+
+# Nice value to run deflacashd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
