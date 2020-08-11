@@ -41,7 +41,7 @@ The following are developer notes on how to build Deflacash on your native platf
 
 Development
 ---------------------
-The Deflacash repo's [root README](https://github.com/deflacash/deflacash/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Deflacash repo's [root README](https://github.com/deflacashprojectproject/deflacash/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

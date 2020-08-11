@@ -44,7 +44,7 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/deflacash/deflacash.git
+        git clone https://github.com/deflacashprojectproject/deflacash.git
         cd Deflacash
 
 2.  Build deflacashd:
