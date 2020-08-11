@@ -88,7 +88,7 @@ public:
         vAlertPubKey = ParseHex("04287edbbb1c16ce03e9f58b893f170962c1993c3d4f2099f1f6a1cc87dac907116f334afc2891eee0f81013f7a2a656a5ffa0850bc80f78c29a0f80c4d0adcf99");
         nDefaultPort = 17231;
         bnProofOfWorkLimit = ~uint256(0) >> 20;
-        nSubsidyHalvingInterval = 210000;
+        nSubsidyHalvingInterval = 1440;
         nMaxReorganizationDepth = 100;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60;
