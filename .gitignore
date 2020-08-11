@@ -85,7 +85,6 @@ src/qt/deflacash-qt.includes
 
 # Compilation and Qt preprocessor part
 *.qm
-Makefile
 deflacash-qt
 deflacash-Qt.app
 deflacash.creator
