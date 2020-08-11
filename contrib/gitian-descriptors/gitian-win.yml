@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/deflacashprojectproject/deflacash.git"
+- "url": "https://github.com/deflacashproject/deflacash.git"
   "dir": "deflacash"
 files: []
 script: |

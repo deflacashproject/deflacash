@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/deflacashprojectproject/deflacash-detached-sigs.git"
+- "url": "https://github.com/deflacashproject/deflacash-detached-sigs.git"
   "dir": "signature"
 files:
 - "deflacash-osx-unsigned.tar.gz"
