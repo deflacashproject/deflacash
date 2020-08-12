@@ -110,7 +110,7 @@ protected:
     int nLastPOWBlock;
     int nMasternodeCountDrift;
     int nMaturity;
-    int nMaxMoneyOut;
+    CAmount nMaxMoneyOut;
    // int nNewMaturity;
     //int nProtocol_switch;
 	int nModifierUpdateBlock;

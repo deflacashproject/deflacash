@@ -1613,7 +1613,7 @@ double ConvertBitsToDouble(unsigned int nBits)
 
 int64_t GetBlockValue(int nHeight)
 {
-    CAmount nSubsidy = 36.5 * COIN;
+    CAmount nSubsidy = 0 * COIN;
 
     int nSubtractValue = nHeight / Params().SubsidyHalvingInterval(); 
 
@@ -1623,9 +1623,10 @@ int64_t GetBlockValue(int nHeight)
     }
 
     if (nHeight == 0) {
-	nSubsidy = 365000 * COIN;    // %1 premine
+	    nSubsidy = 365000 * COIN;    // %1 premine
     } else {
-	nSubsidy -= (nSubtractValue * COIN) / 10;
+        CAmount nSubsidy = 36.5 * COIN;
+	    nSubsidy -= (nSubtractValue * COIN) / 10;
     } 
 
     // Check if we reached the coin max supply.
