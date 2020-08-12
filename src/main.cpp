@@ -1625,7 +1625,7 @@ int64_t GetBlockValue(int nHeight)
     if (nHeight == 0) {
 	    nSubsidy = 365000 * COIN;    // %1 premine
     } else {
-        CAmount nSubsidy = 36.5 * COIN;
+        nSubsidy = 36.5 * COIN;
 	    nSubsidy -= (nSubtractValue * COIN) / 10;
     } 
 
