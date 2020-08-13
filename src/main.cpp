@@ -1625,7 +1625,7 @@ int64_t GetBlockValue(int nHeight)
     if (nHeight == 0) {
 	    nSubsidy = 365000 * COIN;    // %1 premine
     } else {
-        nSubsidy = 36.5 * COIN;
+            nSubsidy = 36.5 * COIN;
 	    nSubsidy -= (nSubtractValue * COIN) / 10;
     } 
 
@@ -1638,6 +1638,7 @@ int64_t GetBlockValue(int nHeight)
     if (nMoneySupply >= Params().MaxMoneyOut())
       nSubsidy = 0;
 
+LogPrintf("Money Supply = %f AND Max Moneyout = %f AND Subsidy = %f\n", nMoneySupply, Params().MaxMoneyOut(), nSubsidy);
 
     return nSubsidy;
 }
